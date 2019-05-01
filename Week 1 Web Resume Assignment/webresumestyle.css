@@ -1,10 +1,16 @@
 .portrait {
-	border-radius: 50%;
-	height: 50%;
-	margin-left: 550px;
-	margin-top: -180px;
-
+    border-radius: 50%;
+    height: 50%;
+    float: right;
 }
 
-p {text-align: justify;
+.short {
+    border: none;
+    border-top: 1px dotted;
+    width: 50%;
+}
+
+#experience {
+    background-color: rgb(92, 38, 38);
+    font-family: "Roboto";
 }
