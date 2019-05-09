@@ -1,7 +1,7 @@
 .portrait {
     border-radius: 50%;
-    height: 50%;
     float: right;
+    height: 500px;
 }
 
 .short {
