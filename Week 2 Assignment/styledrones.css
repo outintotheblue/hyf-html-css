@@ -58,14 +58,21 @@
     }
     
     #grid-flex {
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        grid-template-areas: "header" "section   section  section";
+    }
+    
+    #grid-flex>ul>li:nth-child(1) {
+        flex-basis: 33%;
     }
     
     #grid-flex .grid-item {
         background-color: rgb(112, 92, 106);
         border-radius: 20%;
-        justify-content: space-around;
         width: 18%;
         padding: 20px;
     }
@@ -74,4 +81,18 @@
         width 15%;
         height: 25%;
         padding: 5px 5px 5px 5px;
+    }
+    
+    @media only screen and (max-width: 375px) {
+        #grid-floats {
+            grid-template-areas: "header" "section" "section";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+    
+    @media only screen and (max-width:375px) {
+        li:nth-child(1) {
+            grid-column: 1/3;
+        }
     }
