@@ -11,10 +11,15 @@ h1 {
     line-height: 1.75;
 }
 
+ul {
+    width: 250px;
+}
+
 li {
     color: cornsilk;
     font-size: 1.5em;
     font-family: "Inconsolata", monospace;
+    width: 250px;
 }
 
 li :hover {
@@ -27,4 +32,10 @@ li :active {
 
 li :visited {
     color: rgb(24, 49, 49);
+}
+
+img {
+    float: right;
+    top: -100px;
+    z-index: -1;
 }

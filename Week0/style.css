@@ -62,3 +62,7 @@ footer {
 .gray-background {
     background-color: gray;
 }
+
+img {
+    margin-left: 500px;
+}
