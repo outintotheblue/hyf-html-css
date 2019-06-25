@@ -1,4 +1,4 @@
-                        html {
+             html {
                             background-color: rgb(136, 105, 156);
                         }
                         
@@ -41,10 +41,23 @@
                         
                         #grid-floats .grid-item {
                             justify-self: center;
-                            background-color: rgb(112, 92, 106);
-                            border-radius: 20%;
+                            background-color: rgb(158, 84, 136);
+														border-radius: 20%;
+														animation-name: anim;
+														animation-duration: 5s;
+														animation-iteration-count: 5;
+
                         }
-                        
+												@keyframes anim {
+													0% {
+														background-color: rgb(158, 84, 136);
+													}
+													100% {
+														background-color: rgb(146, 34, 49);
+													
+													}
+												}
+												
                         li:nth-child(1) {
                             grid-column: 1/3;
                         }
