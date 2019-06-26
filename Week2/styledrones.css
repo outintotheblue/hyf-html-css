@@ -120,3 +120,31 @@
        padding: 5px 5px 5px 5px;
        border-radius: 30%;
    }
+
+   @media only screen and (max-width: 375px) {
+       #grid-flex {
+           grid-template-areas: "header" "section" "section";
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 1fr 1fr;
+       }
+   }
+
+   @media only screen and (max-width:375px) {
+       li:nth-child(1) {
+           grid-column: 1/3;
+       }
+   }
+
+   @media only screen and (min-width:376px) and (max-width:768px) {
+       #grid-flex {
+           grid-template-areas: "header" "section  section" "section";
+           grid-template-columns: 33% 33% 33%;
+           grid-template-rows: 1fr 1fr 1fr;
+       }
+   }
+
+   @media only screen and (min-width:376px) and (max-width:768px) {
+       li:nth-child(1) {
+           align-items: stretch;
+       }
+   }
