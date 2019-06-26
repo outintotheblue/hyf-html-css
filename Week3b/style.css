@@ -1,24 +1,71 @@
+html {
+	background-color: ghostwhite;
+}
+
+header {
+	background-color: darkgray;
+	padding: 3%;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: Roboto, sans-serif;
+}
+
+.topnav input[type=text] {
+	float: right;
+	padding: 6px;
+	margin-top: 1px;
+	margin-right: 3px;
+	font-size: 17px;
+	font-family: Roboto, sans-serif;
+}
+
 h1 {
 	font-size: 3em;
 	text-transform: uppercase;
 	font-family: Roboto, sans-serif;
+	color: rgb(195, 224, 191);
+}
+
+ul {
+	display: grid;
+	border: 2px;
+	border-color: rgb(72, 148, 114);
+}
+
+.articles {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(2, minmax(min-content, 25vw));
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1%;
+	margin: 2%;
 }
 
 .logo {
-	
-	
-	float: right; 
-	margin-top: -150px;
+	float: right;
 	animation-name: turn;
-	animation-duration: 6s; 
-animation-iteration-count: infinite;
-
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes turn {
-	0% { transform: rotate(0deg);
-} 50% {
-	transform: rotate(90deg);}
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(90deg);
+	}
 	100% {
 		transform: rotate(180deg);
 	}
