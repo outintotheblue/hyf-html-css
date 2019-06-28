@@ -1,10 +1,15 @@
 html {
 	background-color: ghostwhite;
+	font-family: 'Roboto', sans-serif;
 }
 
 header {
 	background-color: darkgray;
 	padding: 3%;
+}
+
+body {
+	margin: 10px;
 }
 
 .topnav a {
@@ -30,7 +35,6 @@ header {
 h1 {
 	font-size: 3em;
 	text-transform: uppercase;
-	font-family: Roboto, sans-serif;
 	color: rgb(195, 224, 191);
 }
 
@@ -46,10 +50,9 @@ ul {
 	grid-template-columns: repeat(2, minmax(min-content, 25vw));
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
 	padding: 1%;
 	margin: 2%;
+	justify-content: center;
 }
 
 .logo {
